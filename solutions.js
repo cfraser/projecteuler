@@ -19,8 +19,6 @@
  a1 = the first term in the sequence.
  an = the nth term in the sequence.
 
- 2) http://stackoverflow.com/questions/3762589/fastest-javascript-summation
-
 
 */
     var problemOne = function (multiples, limit) {
@@ -79,7 +77,7 @@
 
  Resources:
 
- 1) My brain. ;) - this seems pretty straight forward when I read the problem.
+ 1) My brain. ;) - this seemed pretty straight forward when I read the problem.
 
  */
     var problemTwo = function (limit) {
@@ -115,5 +113,53 @@
     }
 
 
+    /*
+
+     Problem 3
+     The prime factors of 13195 are 5, 7, 13 and 29.
+
+     What is the largest prime factor of the number 600851475143 ?
+
+     Resources:
+
+     1) http://www.mathsisfun.com/prime-factorization.html
+
+     */
+
+
+    var problemThree = function ( upperBound ) {
+        // The largest prime starts at 2 as it's the prime number we start with.
+        var largestPrime = 2,
+            lowerBound = 2;
+
+        // Prime numbers are only divisble by 1.
+        var isPrime = function (number) {
+            for (var x = 2; x < number; x++) {
+                if ( number % x == 0) {
+                    return false;
+                }
+
+                return true;
+            }
+        }
+
+
+        // If number isn't divisible by the numbers between 2 and itself, it's a prime...
+        for (var x = lowerBound; x <= upperBound; x++) {
+            if (upperBound % x == 0) {
+                console.log(upperBound + " : " + x);
+                upperBound = upperBound / x;
+                if (isPrime(x)) {
+                    largestPrime = x;
+                }
+                else if (isPrime(upperBound)) {
+                    largestPrime = upperBound;
+                }
+                x = 1;
+            }
+        }
+
+        return largestPrime;
+    }
 
 })
