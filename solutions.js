@@ -13,14 +13,6 @@
  Resources:
  1) http://www.algebra.com/algebra/homework/Sequences-and-series.faq.question.427328.html
  2) http://www.factmonster.com/ipka/A0933353.html
-
- Sn = (n/2) * (a1 + an)
-
- Sn = the sum of the n terms in the sequence.
- a1 = the first term in the sequence.
- an = the nth term in the sequence.
-
-
 */
     var problemOne = function (multiples, limit) {
         var answer = 0;
