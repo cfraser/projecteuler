@@ -95,17 +95,17 @@
         }
 
         while (sum < limit) {
+            // Only accumulate the even sums.
+            if (isEven(sum)) {
+                answer += sum;
+            }
+
             sum = values[0] + values [1];
 
             // This seems like the cleanest way to sum the elements of the sequence.
             // Add the latest sum to the right most side of the array, and drop the left most.
             values.push(sum);
             values.shift();
-
-            // Only accumulate the even sums.
-            if (isEven(sum)) {
-                answer += sum;
-            }
         }
 
         return answer;
