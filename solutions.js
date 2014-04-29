@@ -12,6 +12,7 @@
 
  Resources:
  1) http://www.algebra.com/algebra/homework/Sequences-and-series.faq.question.427328.html
+ 2) http://www.factmonster.com/ipka/A0933353.html
 
  Sn = (n/2) * (a1 + an)
 
@@ -22,10 +23,7 @@
 
 */
     var problemOne = function (multiples, limit) {
-        var terms = [],
-            an = 0,
-            a1 = 0,
-            answer = 0;
+        var answer = 0;
 
         var largestMultiple = function (multiple, limit) {
             var largestMultiple;
@@ -124,6 +122,7 @@
      Resources:
 
      1) http://www.mathsisfun.com/prime-factorization.html
+     2) http://www.mathsisfun.com/numbers/factors-all-tool.html
 
      */
 
