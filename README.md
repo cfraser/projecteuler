@@ -14,7 +14,7 @@ node solutions.js
 
 Problem Selection
 =================
-I just picked the first three problems on the site since I didn't have a lot of free time this week to work on the solutions. I spent about four hours thinking about the problems and implementing the solutions. The bulk of the time was spent familiarizing myself with the math.
+I just picked the first three problems on the site since I didn't have a lot of free time this week to work on the solutions. I spent about four hours thinking about the problems, implementing the solutions and writing this document. The bulk of the time was spent familiarizing myself with the math.
 
 General Methodology
 ===================
