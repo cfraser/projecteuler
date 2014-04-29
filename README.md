@@ -36,11 +36,6 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 
 Find the sum of all the multiples of 3 or 5 below 1000.
 
-Sn = (n/2) * (a1 + an)
-Sn = the sum of the n terms in the sequence.
-a1 = the first term in the sequence.an = the nth term in the sequence.
-
-
 Answer: 233168
 Compute time: 1ms
 ````
